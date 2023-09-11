@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>WordWizard</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="name">
+        <i class="fa-solid fa-book"></i>
+        WordWizard
+      </div>
+      <div class="min">Discover, Define, Delight</div>
+
+
+      <div class="body">
+        <input type="text" class="input" id="input" placeholder="Start typing any word or phrase">
+        <button class="btn" onclick="perform()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="label">search</div>
+        </button>
+      </div>
+    </nav>
+
+    <div class="defination" id = "defination">
+      <div class="label2" id="label2">Word of the day</div>
+
+      <div class="heading">
+        <div class="word" id="word">
+        </div>
+        <button class="btn2" onclick="speak()">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
+
+      </div>
+
+      <hr class="divider">
+
+      <div class="box" id="box">
+        <ul class="list" id="list">
+          <div class="meaning">
+        </ul>
+      </div>
+    </div>
+
+    <div class="animation hidden" id = "animation">
+      <div class="loader">
+  <div class="inner one"></div>
+  <div class="inner two"></div>
+  <div class="inner three"></div>
+</div>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
